@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merci ! — Les 7 Codes de la Magie des Andes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@400;600&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --noir: #080C14;
+    --or: #C8A96E;
+    --or-vif: #D4A853;
+    --cyan: #4ECDC4;
+    --creme: #F5F0E8;
+    --or-pale: rgba(200,169,110,0.12);
+    --cyan-pale: rgba(78,205,196,0.08);
+  }
+
+  html, body {
+    min-height: 100vh;
+    background-color: var(--noir);
+    color: var(--creme);
+    font-family: 'EB Garamond', Georgia, serif;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(200,169,110,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 40% at 20% 80%, rgba(78,205,196,0.05) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 30% at 80% 90%, rgba(200,169,110,0.04) 0%, transparent 50%);
+    pointer-events: none; z-index: 0;
+  }
+
+  .stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .star {
+    position: absolute; width: 2px; height: 2px; border-radius: 50%;
+    background: var(--creme); opacity: 0;
+    animation: twinkle var(--dur, 4s) var(--delay, 0s) infinite;
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(1); }
+    50% { opacity: var(--max-op, 0.4); transform: scale(1.4); }
+  }
+
+  .page {
+    position: relative; z-index: 1; min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; padding: 60px 20px 80px; text-align: center;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse-or {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(200,169,110,0); }
+    50%       { box-shadow: 0 0 32px 8px rgba(200,169,110,0.18); }
+  }
+
+  .gap-xs { height: 12px; }
+  .gap-sm { height: 24px; }
+  .gap-md { height: 40px; }
+  .gap-lg { height: 56px; }
+
+  .icono-central {
+    font-size: 48px; color: var(--or);
+    opacity: 0; animation: fadeUp 0.8s 0.1s forwards;
+    text-shadow: 0 0 30px rgba(200,169,110,0.4); margin-bottom: 8px;
+  }
+
+  .eyebrow {
+    font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.3em;
+    color: var(--cyan); text-transform: uppercase;
+    opacity: 0; animation: fadeUp 0.8s 0.3s forwards;
+  }
+
+  .sep {
+    width: 120px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--or), transparent);
+    margin: 20px auto; opacity: 0; animation: fadeUp 0.8s 0.4s forwards;
+  }
+  .sep-small {
+    width: 60px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    margin: 16px auto;
+  }
+
+  .titulo {
+    font-family: 'Cinzel', serif; font-size: clamp(28px, 4.5vw, 52px);
+    font-weight: 600; color: var(--or); line-height: 1.2; max-width: 680px;
+    opacity: 0; animation: fadeUp 0.9s 0.5s forwards;
+    text-shadow: 0 0 40px rgba(200,169,110,0.2);
+  }
+
+  .subtitulo {
+    font-family: 'Cormorant Garamond', serif; font-size: clamp(17px, 2.2vw, 24px);
+    font-style: italic; color: var(--cyan); max-width: 560px; line-height: 1.5;
+    opacity: 0; animation: fadeUp 0.9s 0.7s forwards;
+  }
+
+  .confirmacion {
+    background: var(--or-pale); border: 1px solid rgba(200,169,110,0.25);
+    border-radius: 4px; padding: 28px 36px; max-width: 520px; width: 100%;
+    opacity: 0; animation: fadeUp 0.9s 0.9s forwards;
+  }
+  .confirmacion p { font-size: clamp(15px, 1.7vw, 18px); color: var(--creme); line-height: 1.7; }
+  .confirmacion strong { color: var(--or); }
+  .confirmacion .email-nota {
+    margin-top: 12px; font-size: 13px;
+    color: rgba(245,240,232,0.5); font-style: italic;
+  }
+
+  .btn-descarga {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 18px 36px; background: var(--or-vif); color: var(--noir);
+    font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 0.12em;
+    font-weight: 600; text-transform: uppercase; text-decoration: none;
+    border-radius: 3px; cursor: pointer;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 24px rgba(212,168,83,0.35);
+    opacity: 0; animation: fadeUp 0.9s 1.1s forwards, pulse-or 3s 2s infinite;
+  }
+  .btn-descarga:hover { background: #e0b85a; transform: translateY(-2px); box-shadow: 0 8px 36px rgba(212,168,83,0.5); }
+  .btn-descarga:active { transform: translateY(0); }
+  .btn-descarga svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+  .nota-pdf {
+    font-size: 12px; color: rgba(245,240,232,0.35); letter-spacing: 0.05em;
+    opacity: 0; animation: fadeUp 0.8s 1.3s forwards;
+  }
+
+  .que-sigue {
+    max-width: 480px; width: 100%;
+    opacity: 0; animation: fadeUp 0.9s 1.4s forwards;
+  }
+  .que-sigue-titulo {
+    font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.25em;
+    color: var(--cyan); text-transform: uppercase; margin-bottom: 20px;
+  }
+  .pasos { display: flex; flex-direction: column; gap: 14px; text-align: left; }
+  .paso {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 14px 18px; background: rgba(78,205,196,0.05);
+    border: 1px solid rgba(78,205,196,0.12); border-radius: 3px;
+  }
+  .paso-num {
+    font-family: 'Cinzel', serif; font-size: 18px; color: var(--cyan);
+    font-weight: 600; line-height: 1; flex-shrink: 0; margin-top: 2px;
+  }
+  .paso-txt { font-size: clamp(13px, 1.5vw, 15px); color: var(--creme); line-height: 1.6; opacity: 0.85; }
+  .paso-txt strong { color: var(--or); }
+
+  .firma { opacity: 0; animation: fadeUp 0.9s 1.6s forwards; }
+  .firma-linea {
+    width: 1px; height: 40px;
+    background: linear-gradient(180deg, transparent, var(--or), transparent);
+    margin: 0 auto 16px;
+  }
+  .firma p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; color: rgba(245,240,232,0.5); }
+  .firma strong { color: var(--or); font-style: normal; }
+
+  .footer-txt {
+    font-size: 11px; color: rgba(245,240,232,0.22); text-align: center;
+    max-width: 420px; line-height: 1.6; opacity: 0; animation: fadeUp 0.9s 1.8s forwards;
+  }
+  .footer-txt a { color: rgba(200,169,110,0.35); text-decoration: none; }
+</style>
+</head>
+
+<body>
+<div class="stars" id="stars"></div>
+
+<main class="page">
+
+  <div class="icono-central">✦</div>
+  <p class="eyebrow">Les 7 Codes de la Magie des Andes</p>
+  <div class="sep"></div>
+
+  <h1 class="titulo">Ton livre est prêt !</h1>
+  <div class="gap-sm"></div>
+  <h2 class="subtitulo">Le Tome I — Kausay t'attend</h2>
+
+  <div class="gap-md"></div>
+
+  <!-- Confirmation -->
+  <div class="confirmacion">
+    <p>
+      Bienvenue sur le chemin de l'être.<br>
+      Ton accès au <strong>Tome I — Kausay</strong> est confirmé.
+    </p>
+    <p class="email-nota">
+      Un e-mail avec ton lien de téléchargement t'a également été envoyé.<br>
+      Si tu ne le vois pas, vérifie ton dossier spam.
+    </p>
+  </div>
+
+  <div class="gap-md"></div>
+
+  <!-- Bouton téléchargement -->
+  <a class="btn-descarga" href="LIEN_PDF_ICI" target="_blank" download>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" y1="15" x2="12" y2="3"/>
+    </svg>
+    Télécharger Kausay — Tome I
+  </a>
+
+  <div class="gap-xs"></div>
+  <p class="nota-pdf">PDF · Téléchargement gratuit · Sans engagement</p>
+
+  <div class="gap-lg"></div>
+  <div class="sep-small"></div>
+  <div class="gap-md"></div>
+
+  <!-- Que faire maintenant -->
+  <div class="que-sigue">
+    <p class="que-sigue-titulo">Et maintenant ?</p>
+    <div class="pasos">
+      <div class="paso">
+        <span class="paso-num">1</span>
+        <p class="paso-txt"><strong>Télécharge ton livre</strong> avec le bouton ci-dessus et sauvegarde-le sur ton appareil.</p>
+      </div>
+      <div class="paso">
+        <span class="paso-num">2</span>
+        <p class="paso-txt"><strong>Lis le Tome I</strong> tranquillement. Kausay est le premier code — celui de l'énergie vitale.</p>
+      </div>
+      <div class="paso">
+        <span class="paso-num">3</span>
+        <p class="paso-txt"><strong>Surveille ta boîte mail</strong> — tu recevras les prochains codes et ressources exclusives de Kael Solano.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gap-lg"></div>
+
+  <!-- Signature -->
+  <div class="firma">
+    <div class="firma-linea"></div>
+    <p>Avec gratitude,<br><strong>Kael Solano</strong></p>
+  </div>
+
+  <div class="gap-md"></div>
+
+  <!-- Footer -->
+  <p class="footer-txt">
+    © 2026 Kael Solano — Psicomagia / EIPV<br>
+    <a href="#">Politique de confidentialité</a> · <a href="#">Mentions légales</a>
+  </p>
+
+</main>
+
+<script>
+  const starsEl = document.getElementById('stars');
+  for (let i = 0; i < 80; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    s.style.cssText = `
+      left: ${Math.random() * 100}%;
+      top: ${Math.random() * 100}%;
+      --dur: ${3 + Math.random() * 5}s;
+      --delay: ${Math.random() * 6}s;
+      --max-op: ${0.15 + Math.random() * 0.45};
+      width: ${Math.random() > 0.8 ? 3 : 2}px;
+      height: ${Math.random() > 0.8 ? 3 : 2}px;
+    `;
+    starsEl.appendChild(s);
+  }
+</script>
+
+</body>
+</html>
