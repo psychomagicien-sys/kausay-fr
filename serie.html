@@ -48,7 +48,7 @@ section{padding:90px 0}
 .code-pill.active{background:rgba(200,169,110,.18);border-color:rgba(200,169,110,.45)}
 .code-pill.active .name{color:var(--or)}
 .code-pill.coming{opacity:.45}
-.tomes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px}
+.tomes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
 .tome-card{background:var(--or-pale);border:1px solid rgba(200,169,110,.2);border-radius:12px;padding:40px 32px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
 .tome-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--or),transparent)}
 .tome-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.4)}
@@ -128,10 +128,10 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
       <div class="code-pill active"><span class="num">I</span><span class="name">KAUSAY</span></div>
       <div class="code-pill active"><span class="num">II</span><span class="name">ANYA</span></div>
       <div class="code-pill active"><span class="num">III</span><span class="name">MUNAY</span></div>
-      <div class="code-pill coming"><span class="num">IV</span><span class="name">YACHAY</span></div>
-      <div class="code-pill coming"><span class="num">V</span><span class="name">LLANK'AY</span></div>
-      <div class="code-pill coming"><span class="num">VI</span><span class="name">KAWSAY</span></div>
-      <div class="code-pill coming"><span class="num">VII</span><span class="name">AYNI</span></div>
+      <div class="code-pill active"><span class="num">IV</span><span class="name">LLANK'AY</span></div>
+      <div class="code-pill active"><span class="num">V</span><span class="name">YACHAY</span></div>
+      <div class="code-pill active"><span class="num">VI</span><span class="name">AYNI</span></div>
+      <div class="code-pill active"><span class="num">VII</span><span class="name">KAUSAY PACHA</span></div>
     </div>
     <div class="ornament">â¦ â¦ â¦</div>
   </div>
@@ -139,37 +139,79 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
 <section id="tomes">
   <div class="container">
     <p class="section-label">Les Tomes</p>
-    <h2 class="section-title">Commencez le Voyage</h2>
-    <p class="section-intro">Deux tomes disponibles sur Amazon. Un troisiÃ¨me en approche.</p>
+    <h2 class="section-title">La Série Complète</h2>
+    <p class="section-intro">Les 7 tomes disponibles sur Amazon Kindle.</p>
     <div class="tomes-grid">
+      <!-- TOME 1 -->
       <div class="tome-card">
         <p class="tome-number">Tome I</p>
         <h3 class="tome-code">KAUSAY</h3>
-        <p class="tome-subtitle">L'Ãnergie Vitale</p>
+        <p class="tome-subtitle">L'Existence</p>
         <div class="tome-divider"></div>
         <span class="tome-badge badge-published">Disponible</span>
-        <p class="tome-desc">Thomas Mercier part Ã  la rencontre des Q'ero dans les Andes. Son premier code : apprendre Ã  ressentir le souffle de la vie dans chaque Ãªtre. Une initiation Ã  l'Ã©nergie qui anime tout.</p>
-        <a href="https://www.amazon.fr/KAUSAY-LExistence-Chemin-l%C3%8Atre-t-ebook/dp/B0GX2ZQVV9?ref_=saga_dp_bnx_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon â</a>
+        <p class="tome-desc">Thomas Mercier part à la rencontre des Q'ero dans les Andes. Son premier code : apprendre à ressentir le souffle de la vie dans chaque être. Une initiation à l'énergie qui anime tout.</p>
+        <a href="https://www.amazon.fr/KAUSAY-LExistence-Chemin-l%C3%8Atre-t-ebook/dp/B0GX2ZQVV9?ref_=saga_dp_bnx_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
+      <!-- TOME 2 -->
       <div class="tome-card">
         <p class="tome-number">Tome II</p>
         <h3 class="tome-code">ANYA</h3>
-        <p class="tome-subtitle">La VÃ©ritÃ© Choisie</p>
+        <p class="tome-subtitle">La Vérité Choisie</p>
         <div class="tome-divider"></div>
         <span class="tome-badge badge-published">Disponible</span>
-        <p class="tome-desc">Le deuxiÃ¨me code confronte Thomas Ã  la nature de la vÃ©ritÃ©. Quelle rÃ©alitÃ© choisissons-nous de vivre ? ANYA nous invite Ã  questionner nos croyances les plus profondes.</p>
-        <a href="https://www.amazon.fr/dp/B0GX315HFN" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon â</a>
+        <p class="tome-desc">Le deuxième code confronte Thomas à la nature de la vérité. Quelle réalité choisissons-nous de vivre ? ANYA nous invite à questionner nos croyances les plus profondes.</p>
+        <a href="https://www.amazon.fr/dp/B0GX315HFN" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
+      <!-- TOME 3 -->
       <div class="tome-card">
         <p class="tome-number">Tome III</p>
         <h3 class="tome-code">MUNAY</h3>
         <p class="tome-subtitle">L'Amour Universel</p>
         <div class="tome-divider"></div>
         <span class="tome-badge badge-published">Disponible</span>
-        <p class="tome-desc">MUNAY — l’amour sans condition, sans frontière. Le troisième code emmène Thomas au cœur de ce que signifie aimer au-delà de soi.</p>
+        <p class="tome-desc">MUNAY — l'amour sans condition, sans frontière. Le troisième code emmène Thomas au cœur de ce que signifie aimer au-delà de soi.</p>
         <a href="https://www.amazon.fr/dp/B0GX3BHJ5L" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
-
+      <!-- TOME 4 -->
+      <div class="tome-card">
+        <p class="tome-number">Tome IV</p>
+        <h3 class="tome-code">LLANK'AY</h3>
+        <p class="tome-subtitle">Le Langage &amp; la Symbolisation</p>
+        <div class="tome-divider"></div>
+        <span class="tome-badge badge-published">Disponible</span>
+        <p class="tome-desc">Le quatrième code révèle la puissance du langage et des symboles. Thomas découvre comment les mots et les signes façonnent notre réalité intérieure et extérieure.</p>
+        <a href="https://www.amazon.fr/LLankay-Langage-Symbolisation-Chemin-l%C3%8Atre-ebook/dp/B0GX7C4YJV?ref_=saga_dp_ss_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
+      </div>
+      <!-- TOME 5 -->
+      <div class="tome-card">
+        <p class="tome-number">Tome V</p>
+        <h3 class="tome-code">YACHAY</h3>
+        <p class="tome-subtitle">Le Savoir &amp; l'Intégration</p>
+        <div class="tome-divider"></div>
+        <span class="tome-badge badge-published">Disponible</span>
+        <p class="tome-desc">Le cinquième code est celui du savoir intégré. YACHAY guide Thomas vers une sagesse vécue de l'intérieur, au-delà de toute connaissance intellectuelle.</p>
+        <a href="https://www.amazon.fr/YACHE-Savoir-LInt%C3%A9gration-Chemin-l%C3%8Atre-ebook/dp/B0GX3FHXJD?ref_=saga_dp_ss_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
+      </div>
+      <!-- TOME 6 -->
+      <div class="tome-card">
+        <p class="tome-number">Tome VI</p>
+        <h3 class="tome-code">AYNI</h3>
+        <p class="tome-subtitle">La Réciprocité</p>
+        <div class="tome-divider"></div>
+        <span class="tome-badge badge-published">Disponible</span>
+        <p class="tome-desc">Le sixième code enseigne l'art du don et de la réciprocité. AYNI révèle à Thomas que l'équilibre du monde repose sur l'échange juste entre tous les êtres.</p>
+        <a href="https://www.amazon.fr/AYNI-R%C3%A9ciprocit%C3%A9-Chemin-l%C3%8Atre-t-ebook/dp/B0GX34JY52?ref_=saga_dp_ss_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
+      </div>
+      <!-- TOME 7 -->
+      <div class="tome-card">
+        <p class="tome-number">Tome VII</p>
+        <h3 class="tome-code">KAUSAY PACHA</h3>
+        <p class="tome-subtitle">Le Temps &amp; l'Espace Sacré</p>
+        <div class="tome-divider"></div>
+        <span class="tome-badge badge-published">Disponible</span>
+        <p class="tome-desc">Le septième et dernier code. KAUSAY PACHA emmène Thomas dans une compréhension profonde du temps et de l'espace sacré — l'aboutissement du chemin initiatique.</p>
+        <a href="https://www.amazon.fr/KAUSAY-PACHA-Temps-LEspace-Chemin-ebook/dp/B0GX3692Y8?ref_=saga_dp_ss_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -185,7 +227,7 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
       <div class="auteur-stats">
         <div class="stat-box"><span class="stat-number">7</span><span class="stat-label">Codes andins</span></div>
         <div class="stat-box"><span class="stat-number">7</span><span class="stat-label">Romans</span></div>
-        <div class="stat-box"><span class="stat-number">3</span><span class="stat-label">Tomes publiÃ©s</span></div>
+        <div class="stat-box"><span class="stat-number">7</span><span class="stat-label">Tomes publiÃ©s</span></div>
         <div class="stat-box"><span class="stat-number">â</span><span class="stat-label">Chemins vers soi</span></div>
       </div>
     </div>
