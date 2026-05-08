@@ -91,6 +91,9 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
 .footer-links a:hover{opacity:.8}
 .footer-copy{font-family:"Inter",sans-serif;font-size:12px;opacity:.3;letter-spacing:.05em}
 @media(max-width:768px){.nav-links{display:none}.codes-grid{grid-template-columns:repeat(4,1fr)}.auteur-inner{grid-template-columns:1fr;gap:40px}.cta-box{padding:48px 24px}.hero{padding:80px 0 60px}}
+.auteur-photo-wrap{border-radius:12px;overflow:hidden;margin-bottom:20px;border:1px solid rgba(200,169,110,.2);aspect-ratio:4/3}
+.auteur-photo{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.auteur-right{display:flex;flex-direction:column;gap:0}
 </style>
 </head>
 <body>
@@ -220,15 +223,18 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
     <div class="auteur-inner">
       <div>
         <p class="section-label" style="text-align:left;margin-bottom:20px">L'Auteur</p>
-        <blockquote class="auteur-quote">Ces romans ne sont pas une fiction sur les Andes â ils sont une transmission de leur sagesse.</blockquote>
+        <blockquote class="auteur-quote">Ces romans ne sont pas une fiction sur les Andes — ils sont une transmission de leur sagesse.</blockquote>
         <p class="auteur-name">Kael Solano</p>
-        <p class="auteur-bio">Kael Solano explore depuis des annÃ©es les traditions spirituelles des peuples Q'ero des Andes pÃ©ruviennes. Ã travers la fiction, il transmet des codes de sagesse ancestrale pour accompagner chaque lecteur vers une comprÃ©hension plus profonde de lui-mÃªme.</p>
+        <p class="auteur-bio">Explorés à travers voyages, pratiques chamaniques et études des traditions Q'ero, les sept codes andins de Kael Solano forment un chemin vivant vers soi. Auteur de la série <em>Le Chemin de l'Être</em>, il transmet une sagesse ancestrale mise en fiction pour la première fois.</p>
       </div>
-      <div class="auteur-stats">
-        <div class="stat-box"><span class="stat-number">7</span><span class="stat-label">Codes andins</span></div>
-        <div class="stat-box"><span class="stat-number">7</span><span class="stat-label">Romans</span></div>
-        <div class="stat-box"><span class="stat-number">7</span><span class="stat-label">Tomes publiÃ©s</span></div>
-        <div class="stat-box"><span class="stat-number">â</span><span class="stat-label">Chemins vers soi</span></div>
+      <div class="auteur-right">
+        <div class="auteur-photo-wrap">
+          <img src="auteur.jpg" alt="Kael Solano" class="auteur-photo" loading="lazy"/>
+        </div>
+        <div class="auteur-stats">
+          <div class="stat-box"><span class="stat-number">7</span><span class="stat-label">Tomes publiés</span></div>
+          <div class="stat-box"><span class="stat-number">∞</span><span class="stat-label">Chemins vers soi</span></div>
+        </div>
       </div>
     </div>
   </div>
