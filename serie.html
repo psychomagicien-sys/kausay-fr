@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Le Chemin de l'Ãtre â Kael Solano</title>
-<meta name="description" content="7 codes andins. 7 romans. Un voyage vers soi. DÃ©couvrez la sÃ©rie Le Chemin de l'Ãtre de Kael Solano."/>
+<title>Le Chemin de l'Être — Kael Solano</title>
+<meta name="description" content="7 codes andins. 7 romans. Un voyage vers soi. Découvrez la série Le Chemin de l'Être de Kael Solano."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -52,28 +52,23 @@ section{padding:90px 0}
 .tome-card{background:var(--or-pale);border:1px solid rgba(200,169,110,.2);border-radius:12px;padding:40px 32px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
 .tome-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--or),transparent)}
 .tome-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.4)}
-.tome-card.teaser::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent)}
-.tome-card.teaser{background:var(--cyan-pale);border-color:rgba(78,205,196,.2)}
 .tome-number{font-family:"Inter",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--or);margin-bottom:12px}
-.tome-card.teaser .tome-number{color:var(--cyan)}
 .tome-code{font-family:"Cinzel",serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--or);line-height:1;margin-bottom:4px}
-.tome-card.teaser .tome-code{color:var(--cyan)}
 .tome-subtitle{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:18px;color:var(--creme);opacity:.75;margin-bottom:20px}
 .tome-divider{width:40px;height:1px;background:var(--or);margin-bottom:20px;opacity:.4}
-.tome-card.teaser .tome-divider{background:var(--cyan)}
 .tome-desc{font-size:16px;line-height:1.7;color:var(--creme);opacity:.78;margin-bottom:28px}
 .tome-badge{display:inline-block;font-family:"Inter",sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:24px}
 .badge-published{background:rgba(200,169,110,.15);color:var(--or);border:1px solid rgba(200,169,110,.35)}
 .badge-coming{background:rgba(78,205,196,.1);color:var(--cyan);border:1px solid rgba(78,205,196,.3)}
 .tome-cta{display:inline-block;font-family:"Inter",sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--noir);background:var(--or-vif);padding:12px 24px;border-radius:4px;text-decoration:none;transition:opacity .2s,transform .2s}
 .tome-cta:hover{opacity:.88;transform:translateY(-1px)}
-.tome-cta-ghost{display:inline-block;font-family:"Inter",sans-serif;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);border:1px solid rgba(78,205,196,.35);padding:11px 22px;border-radius:4px;text-decoration:none;transition:all .2s}
-.tome-cta-ghost:hover{background:var(--cyan-pale);border-color:var(--cyan)}
 .auteur-section{background:var(--or-pale);border-top:1px solid rgba(200,169,110,.15);border-bottom:1px solid rgba(200,169,110,.15)}
-.auteur-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.auteur-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
 .auteur-quote{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(22px,3vw,30px);color:var(--or);line-height:1.5;margin-bottom:24px}
 .auteur-name{font-family:"Cinzel",serif;font-size:16px;color:var(--creme);letter-spacing:.1em;margin-bottom:8px}
 .auteur-bio{font-size:16px;line-height:1.75;opacity:.75}
+.auteur-photo-wrap{border-radius:12px;overflow:hidden;margin-bottom:20px;border:1px solid rgba(200,169,110,.2)}
+.auteur-photo{width:100%;height:auto;display:block;object-fit:cover;object-position:center top}
 .auteur-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .stat-box{background:rgba(8,12,20,.5);border:1px solid rgba(200,169,110,.18);border-radius:8px;padding:20px;text-align:center}
 .stat-number{font-family:"Cinzel",serif;font-size:32px;color:var(--or);display:block;margin-bottom:4px}
@@ -91,18 +86,15 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
 .footer-links a:hover{opacity:.8}
 .footer-copy{font-family:"Inter",sans-serif;font-size:12px;opacity:.3;letter-spacing:.05em}
 @media(max-width:768px){.nav-links{display:none}.codes-grid{grid-template-columns:repeat(4,1fr)}.auteur-inner{grid-template-columns:1fr;gap:40px}.cta-box{padding:48px 24px}.hero{padding:80px 0 60px}}
-.auteur-photo-wrap{border-radius:12px;overflow:hidden;margin-bottom:20px;border:1px solid rgba(200,169,110,.2);aspect-ratio:4/3}
-.auteur-photo{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-.auteur-right{display:flex;flex-direction:column;gap:0}
 </style>
 </head>
 <body>
 <div class="stars" id="stars"></div>
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-brand">Le Chemin de l'Ãtre</a>
+    <a href="#" class="nav-brand">Le Chemin de l'Être</a>
     <ul class="nav-links">
-      <li><a href="#serie">La SÃ©rie</a></li>
+      <li><a href="#serie">La Série</a></li>
       <li><a href="#tomes">Les Tomes</a></li>
       <li><a href="#auteur">L'Auteur</a></li>
     </ul>
@@ -111,22 +103,22 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
 </nav>
 <section class="hero">
   <div class="container">
-    <p class="hero-eyebrow">â¦ Kael Solano â SÃ©rie LittÃ©raire</p>
-    <h1 class="hero-title">Le Chemin de l'Ãtre</h1>
+    <p class="hero-eyebrow">✦ Kael Solano — Série Littéraire</p>
+    <h1 class="hero-title">Le Chemin de l'Être</h1>
     <p class="hero-subtitle">7 codes andins. 7 romans. Un voyage vers soi.</p>
     <div class="hero-divider"></div>
-    <p class="hero-desc">Ã travers les sagesses Q'ero des Andes, Thomas Mercier traverse sept Ã©preuves initiatiques. Chaque tome est un code. Chaque code est une clÃ©.</p>
+    <p class="hero-desc">À travers les sagesses Q'ero des Andes, Thomas Mercier traverse sept épreuves initiatiques. Chaque tome est un code. Chaque code est une clé.</p>
     <div class="hero-btns">
-      <a href="#tomes" class="btn-primary">DÃ©couvrir les tomes</a>
+      <a href="#tomes" class="btn-primary">Découvrir les tomes</a>
       <a href="https://psychomagicien.systeme.io/chemin-tome3" class="btn-secondary">Extrait Tome 3 gratuit</a>
     </div>
   </div>
 </section>
 <section id="serie">
   <div class="container">
-    <p class="section-label">La SÃ©rie</p>
+    <p class="section-label">La Série</p>
     <h2 class="section-title">Les 7 Codes Q'ero</h2>
-    <p class="section-intro">Chaque roman explore un code ancestral de la tradition inca â une sagesse transmise oralement depuis des siÃ¨cles, mise en fiction pour la premiÃ¨re fois.</p>
+    <p class="section-intro">Chaque roman explore un code ancestral de la tradition inca — une sagesse transmise oralement depuis des siècles, mise en fiction pour la première fois.</p>
     <div class="codes-grid">
       <div class="code-pill active"><span class="num">I</span><span class="name">KAUSAY</span></div>
       <div class="code-pill active"><span class="num">II</span><span class="name">ANYA</span></div>
@@ -136,7 +128,7 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
       <div class="code-pill active"><span class="num">VI</span><span class="name">AYNI</span></div>
       <div class="code-pill active"><span class="num">VII</span><span class="name">KAUSAY PACHA</span></div>
     </div>
-    <div class="ornament">â¦ â¦ â¦</div>
+    <div class="ornament">✦ ✦ ✦</div>
   </div>
 </section>
 <section id="tomes">
@@ -145,27 +137,24 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
     <h2 class="section-title">La Série Complète</h2>
     <p class="section-intro">Les 7 tomes disponibles sur Amazon Kindle.</p>
     <div class="tomes-grid">
-      <!-- TOME 1 -->
       <div class="tome-card">
         <p class="tome-number">Tome I</p>
         <h3 class="tome-code">KAUSAY</h3>
         <p class="tome-subtitle">L'Existence</p>
         <div class="tome-divider"></div>
         <span class="tome-badge badge-published">Disponible</span>
-        <p class="tome-desc">Thomas Mercier part à la rencontre des Q'ero dans les Andes. Son premier code : apprendre à ressentir le souffle de la vie dans chaque être. Une initiation à l'énergie qui anime tout.</p>
+        <p class="tome-desc">Thomas Mercier part à la rencontre des Q'ero dans les Andes. Son premier code : apprendre à ressentir le souffle de la vie dans chaque être. Une initiation à l'énergie qui anime tout.</p>
         <a href="https://www.amazon.fr/KAUSAY-LExistence-Chemin-l%C3%8Atre-t-ebook/dp/B0GX2ZQVV9?ref_=saga_dp_bnx_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
-      <!-- TOME 2 -->
       <div class="tome-card">
         <p class="tome-number">Tome II</p>
         <h3 class="tome-code">ANYA</h3>
         <p class="tome-subtitle">La Vérité Choisie</p>
         <div class="tome-divider"></div>
         <span class="tome-badge badge-published">Disponible</span>
-        <p class="tome-desc">Le deuxième code confronte Thomas à la nature de la vérité. Quelle réalité choisissons-nous de vivre ? ANYA nous invite à questionner nos croyances les plus profondes.</p>
+        <p class="tome-desc">Le deuxième code confronte Thomas à la nature de la vérité. Quelle réalité choisissons-nous de vivre ? ANYA nous invite à questionner nos croyances les plus profondes.</p>
         <a href="https://www.amazon.fr/dp/B0GX315HFN" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
-      <!-- TOME 3 -->
       <div class="tome-card">
         <p class="tome-number">Tome III</p>
         <h3 class="tome-code">MUNAY</h3>
@@ -175,7 +164,6 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
         <p class="tome-desc">MUNAY — l'amour sans condition, sans frontière. Le troisième code emmène Thomas au cœur de ce que signifie aimer au-delà de soi.</p>
         <a href="https://www.amazon.fr/dp/B0GX3BHJ5L" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
-      <!-- TOME 4 -->
       <div class="tome-card">
         <p class="tome-number">Tome IV</p>
         <h3 class="tome-code">LLANK'AY</h3>
@@ -185,7 +173,6 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
         <p class="tome-desc">Le quatrième code révèle la puissance du langage et des symboles. Thomas découvre comment les mots et les signes façonnent notre réalité intérieure et extérieure.</p>
         <a href="https://www.amazon.fr/LLankay-Langage-Symbolisation-Chemin-l%C3%8Atre-ebook/dp/B0GX7C4YJV?ref_=saga_dp_ss_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
-      <!-- TOME 5 -->
       <div class="tome-card">
         <p class="tome-number">Tome V</p>
         <h3 class="tome-code">YACHAY</h3>
@@ -195,7 +182,6 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
         <p class="tome-desc">Le cinquième code est celui du savoir intégré. YACHAY guide Thomas vers une sagesse vécue de l'intérieur, au-delà de toute connaissance intellectuelle.</p>
         <a href="https://www.amazon.fr/YACHE-Savoir-LInt%C3%A9gration-Chemin-l%C3%8Atre-ebook/dp/B0GX3FHXJD?ref_=saga_dp_ss_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
-      <!-- TOME 6 -->
       <div class="tome-card">
         <p class="tome-number">Tome VI</p>
         <h3 class="tome-code">AYNI</h3>
@@ -205,7 +191,6 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
         <p class="tome-desc">Le sixième code enseigne l'art du don et de la réciprocité. AYNI révèle à Thomas que l'équilibre du monde repose sur l'échange juste entre tous les êtres.</p>
         <a href="https://www.amazon.fr/AYNI-R%C3%A9ciprocit%C3%A9-Chemin-l%C3%8Atre-t-ebook/dp/B0GX34JY52?ref_=saga_dp_ss_dsk_dp" target="_blank" rel="noopener" class="tome-cta">Lire sur Amazon →</a>
       </div>
-      <!-- TOME 7 -->
       <div class="tome-card">
         <p class="tome-number">Tome VII</p>
         <h3 class="tome-code">KAUSAY PACHA</h3>
@@ -227,7 +212,7 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
         <p class="auteur-name">Kael Solano</p>
         <p class="auteur-bio">Explorés à travers voyages, pratiques chamaniques et études des traditions Q'ero, les sept codes andins de Kael Solano forment un chemin vivant vers soi. Auteur de la série <em>Le Chemin de l'Être</em>, il transmet une sagesse ancestrale mise en fiction pour la première fois.</p>
       </div>
-      <div class="auteur-right">
+      <div>
         <div class="auteur-photo-wrap">
           <img src="auteur.jpg" alt="Kael Solano" class="auteur-photo" loading="lazy"/>
         </div>
@@ -242,29 +227,29 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <p class="section-label">Tome III â MUNAY</p>
+      <p class="section-label">Tome III — MUNAY</p>
       <h2 class="cta-title">Le Chemin continue</h2>
-      <p class="cta-text">Rejoignez les lecteurs du Chemin â Kael Solano vous envoie un fragment de MUNAY avant sa sortie officielle.</p>
+      <p class="cta-text">Rejoignez les lecteurs du Chemin — Kael Solano vous envoie un fragment de MUNAY avant sa sortie officielle.</p>
       <a href="https://psychomagicien.systeme.io/chemin-tome3" class="btn-primary">Je rejoins le Chemin</a>
-      <p class="cta-note">Extrait offert Â· Aucun engagement Â· DÃ©sabonnement libre</p>
+      <p class="cta-note">Extrait offert · Aucun engagement · Désabonnement libre</p>
     </div>
   </div>
 </section>
 <footer>
   <div class="container">
-    <p class="footer-brand">Le Chemin de l'Ãtre</p>
+    <p class="footer-brand">Le Chemin de l'Être</p>
     <ul class="footer-links">
       <li><a href="https://www.amazon.fr/stores/Kael-Solano/author/B0GX3692Y8" target="_blank">Amazon</a></li>
       <li><a href="https://www.instagram.com/contactkaelsolano/">Instagram</a></li>
       <li><a href="https://psychomagicien.systeme.io/chemin-tome3">Extrait Tome 3</a></li>
     </ul>
-    <p class="footer-copy">Â© 2026 Kael Solano â Tous droits rÃ©servÃ©s</p>
+    <p class="footer-copy">© 2026 Kael Solano — Tous droits réservés</p>
   </div>
 </footer>
 <script>
 const s=document.getElementById('stars');
-for(let i=0;i<80;i++){const d=document.createElement('div');d.className='star';d.style.cssText='left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;--dur:'+(3+Math.random()*5)+'s;--delay:'+Math.random()*6+'s;';s.appendChild(d);}
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}});});
+for(let i=0;i<80;i++){const d=document.createElement('div');d.className='star';d.style.cssText='left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;--dur:'+(3+Math.random()*4)+'s;--delay:'+Math.random()*5+'s';s.appendChild(d)}
+document.querySelectorAll('a[href="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}})});
 </script>
 </body>
 </html>
