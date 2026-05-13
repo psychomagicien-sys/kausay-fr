@@ -86,6 +86,89 @@ footer{border-top:1px solid rgba(200,169,110,.12);padding:40px 0;text-align:cent
 .footer-links a:hover{opacity:.8}
 .footer-copy{font-family:"Inter",sans-serif;font-size:12px;opacity:.3;letter-spacing:.05em}
 @media(max-width:768px){.nav-links{display:none}.codes-grid{grid-template-columns:repeat(4,1fr)}.auteur-inner{grid-template-columns:1fr;gap:40px}.cta-box{padding:48px 24px}.hero{padding:80px 0 60px}}
+
+/* ═══ FIX GOOGLE FONTS — chargement asynchrone ═══ */
+/* (géré dans le head via media="print") */
+
+/* ═══ COULEURS DISTINCTES PAR TOME ═══ */
+
+/* Tome I — KAUSAY — Or chaud (couleur mère de la série) */
+.tome-card:nth-child(1) {
+  background: rgba(200, 169, 110, 0.15) !important;
+  border-color: rgba(200, 169, 110, 0.5) !important;
+}
+.tome-card:nth-child(1) .tome-number,
+.tome-card:nth-child(1) .tome-code { color: #C8A96E !important; }
+.tome-card:nth-child(1) .tome-divider { background: #C8A96E !important; }
+.tome-card:nth-child(1)::before { background: linear-gradient(90deg, transparent, #C8A96E, transparent) !important; }
+.tome-card:nth-child(1) a { color: #C8A96E !important; border-color: rgba(200,169,110,0.5) !important; }
+
+/* Tome II — ANYA — Bleu nuit (vérité profonde, mythes intérieurs) */
+.tome-card:nth-child(2) {
+  background: rgba(31, 56, 120, 0.3) !important;
+  border-color: rgba(100, 140, 210, 0.4) !important;
+}
+.tome-card:nth-child(2) .tome-number,
+.tome-card:nth-child(2) .tome-code { color: #7AAAEE !important; }
+.tome-card:nth-child(2) .tome-divider { background: #7AAAEE !important; }
+.tome-card:nth-child(2)::before { background: linear-gradient(90deg, transparent, #7AAAEE, transparent) !important; }
+.tome-card:nth-child(2) a { color: #7AAAEE !important; border-color: rgba(100,160,220,0.5) !important; }
+
+/* Tome III — MUNAY — Cuivre/terracotta (amour, chaleur, feu intérieur) */
+.tome-card:nth-child(3) {
+  background: rgba(180, 90, 55, 0.18) !important;
+  border-color: rgba(200, 120, 75, 0.45) !important;
+}
+.tome-card:nth-child(3) .tome-number,
+.tome-card:nth-child(3) .tome-code { color: #D4845A !important; }
+.tome-card:nth-child(3) .tome-divider { background: #D4845A !important; }
+.tome-card:nth-child(3)::before { background: linear-gradient(90deg, transparent, #D4845A, transparent) !important; }
+.tome-card:nth-child(3) a { color: #D4845A !important; border-color: rgba(200,120,75,0.5) !important; }
+
+/* Tome IV — YANQUEI — Vert sauge sombre (terre, Normandie, héritage) */
+.tome-card:nth-child(4) {
+  background: rgba(65, 95, 65, 0.25) !important;
+  border-color: rgba(100, 145, 88, 0.45) !important;
+}
+.tome-card:nth-child(4) .tome-number,
+.tome-card:nth-child(4) .tome-code { color: #8BB578 !important; }
+.tome-card:nth-child(4) .tome-divider { background: #8BB578 !important; }
+.tome-card:nth-child(4)::before { background: linear-gradient(90deg, transparent, #8BB578, transparent) !important; }
+.tome-card:nth-child(4) a { color: #8BB578 !important; border-color: rgba(100,145,88,0.5) !important; }
+
+/* Tome V — YACHE — Ocre brun (corps, ancrage, incarnation) */
+.tome-card:nth-child(5) {
+  background: rgba(130, 95, 45, 0.22) !important;
+  border-color: rgba(160, 120, 55, 0.45) !important;
+}
+.tome-card:nth-child(5) .tome-number,
+.tome-card:nth-child(5) .tome-code { color: #B8924A !important; }
+.tome-card:nth-child(5) .tome-divider { background: #B8924A !important; }
+.tome-card:nth-child(5)::before { background: linear-gradient(90deg, transparent, #B8924A, transparent) !important; }
+.tome-card:nth-child(5) a { color: #B8924A !important; border-color: rgba(160,120,55,0.5) !important; }
+
+/* Tome VI — AYNI — Améthyste/prune (féminin, Elena, réciprocité) */
+.tome-card:nth-child(6) {
+  background: rgba(100, 55, 130, 0.22) !important;
+  border-color: rgba(145, 88, 175, 0.45) !important;
+}
+.tome-card:nth-child(6) .tome-number,
+.tome-card:nth-child(6) .tome-code { color: #B07FD0 !important; }
+.tome-card:nth-child(6) .tome-divider { background: #B07FD0 !important; }
+.tome-card:nth-child(6)::before { background: linear-gradient(90deg, transparent, #B07FD0, transparent) !important; }
+.tome-card:nth-child(6) a { color: #B07FD0 !important; border-color: rgba(145,88,175,0.5) !important; }
+
+/* Tome VII — KAUSAY PACHA — Crème lumineux (dissolution, plénitude, retour) */
+.tome-card:nth-child(7) {
+  background: rgba(245, 240, 232, 0.07) !important;
+  border-color: rgba(245, 240, 232, 0.35) !important;
+}
+.tome-card:nth-child(7) .tome-number,
+.tome-card:nth-child(7) .tome-code { color: #F5F0E8 !important; }
+.tome-card:nth-child(7) .tome-divider { background: #F5F0E8 !important; }
+.tome-card:nth-child(7)::before { background: linear-gradient(90deg, transparent, #F5F0E8, transparent) !important; }
+.tome-card:nth-child(7) a { color: #F5F0E8 !important; border-color: rgba(245,240,232,0.4) !important; }
+
 </style>
 </head>
 <body>
